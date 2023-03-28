@@ -2,7 +2,7 @@
 ___
 ## Repositório
 Esse repositório armazena os projetos desenvolvidos ao longo da disciplina de Dispositivos Periféricos do curso de
-Engenharia de Mecatrôncia. São projetos Android desenvolvidos com Java que tem como objetivo conectar smartphones com
+Engenharia de Mecatrôncia. São projetos Android, desenvolvidos com Java e que tem como objetivo conectar smartphones com
 outro disposivos via bluetooth.<br/>
 O repositório está organizado de forma que cada subpasta representa um projeto android com um objetivo especpifico.
 ___
