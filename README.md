@@ -12,3 +12,4 @@ ___
 | Projeto          | Descrição                                                                                                       |
 |------------------|-----------------------------------------------------------------------------------------------------------------|
 | BluetoothArduino | É possível escolher um dispositivo pareado ao smartphone e conectar-se a ele para realizar o envio de mensagens |
+| ServoControl     | Envia via bluetooth informações do acelerometro do smartphone, possibilitando controle de um servo              |

@@ -49,10 +49,11 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("ResourceAsColor")
     private View.OnClickListener itemClickListener() {
         View.OnClickListener clickListener = v -> {
-            View rootView = v.getRootView();
+//            View rootView = v.getRootView(); // TODO getParent
+            View parentView = (View) v.getParent();
             Button deviceConnectButton = v.findViewById(R.id.deviceConnectBtn);
-            TextView deviceNameTextView = rootView.findViewById(R.id.device_item_name);
-            TextView deviceAddressTextView = rootView.findViewById(R.id.device_item_address);
+            TextView deviceNameTextView = parentView.findViewById(R.id.device_item_name);
+            TextView deviceAddressTextView = parentView.findViewById(R.id.device_item_address);
 
             Boolean deviceIsConnected = bluetoothService.connectToDevice(deviceAddressTextView.getText().toString());
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view) {
         String message = messageTextInput.getText().toString();
         bluetoothService.sendMessage(message);
+        messageTextInput.setText("");
     }
 
     private void updatePairedDevicesList() {
